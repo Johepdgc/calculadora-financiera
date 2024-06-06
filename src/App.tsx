@@ -8,7 +8,7 @@ function App() {
         id="nav"
         className="h-screen bg-gray-800 text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform transition duration-200 ease-in-out"
       >
-        <h2 className="text-2xl font-extrabold">Calculadora Finaciera</h2>
+        <h2 className="text-2xl font-extrabold">Calculadora Financiera</h2>
         <nav>
           <a className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
             <Link to={`/home`}>Inicio</Link>
