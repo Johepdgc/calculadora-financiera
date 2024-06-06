@@ -36,10 +36,12 @@ const CompoundInterest = () => {
       timeInYears = time / 12;
     } else if (timeUnit === "semestres") {
       timeInYears = time / 2;
-    } else if (timeUnit === "dias") {
-      timeInYears = time / 365;
     } else if (timeUnit === "trimestres") {
       timeInYears = time / 4;
+    } else if (timeUnit === "bimestres") {
+      timeInYears = time / 6;
+    } else if (timeUnit === "quincenas") {
+      timeInYears = time / 24;
     }
 
     const futureValue =
@@ -85,8 +87,9 @@ const CompoundInterest = () => {
           <option value="años">Años</option>
           <option value="meses">Meses</option>
           <option value="semestres">Semestres</option>
-          <option value="dias">Días</option>
           <option value="trimestres">Trimestres</option>
+          <option value="bimestres">Bimestres</option>
+          <option value="quincenas">Quincenas</option>
         </select>
       </div>
       <Button

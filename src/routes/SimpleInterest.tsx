@@ -20,7 +20,7 @@ const SimpleInterest = () => {
       timeInYears = time / 2;
     } else if (timeUnit === "trimestres") {
       timeInYears = time / 4;
-    } else if (timeUnit === "bimenstres") {
+    } else if (timeUnit === "bimestres") {
       timeInYears = time / 6;
     } else if (timeUnit === "quincenas") {
       timeInYears = time / 24;

@@ -39,10 +39,12 @@ const PresentValue = () => {
       timeInYears = time / 12;
     } else if (timeUnit === "semestres") {
       timeInYears = time / 2;
-    } else if (timeUnit === "dias") {
-      timeInYears = time / 365;
     } else if (timeUnit === "trimestres") {
       timeInYears = time / 4;
+    } else if (timeUnit === "bimestres") {
+      timeInYears = time / 6;
+    } else if (timeUnit === "quincenas") {
+      timeInYears = time / 24;
     }
     // VERIFICAR PORQUE HAY UN MARGEN DE ERROR
     if (interestType === "simple") {
@@ -105,11 +107,12 @@ const PresentValue = () => {
           onChange={(e) => setRateUnit(e.target.value)}
           className="mt-1 block w-1/8 py-2 px-3 border border-gray-300 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         >
-          <option value="anual">Anual</option>
-          <option value="semestral">Semestral</option>
-          <option value="trimestral">Trimestral</option>
-          <option value="mensual">Mensual</option>
-          <option value="diario">Diario</option>
+          <option value="años">Años</option>
+          <option value="meses">Meses</option>
+          <option value="semestres">Semestres</option>
+          <option value="trimestres">Trimestres</option>
+          <option value="bimestres">Bimestres</option>
+          <option value="quincenas">Quincenas</option>
         </select>
       </div>
       <div className="mb-4">
